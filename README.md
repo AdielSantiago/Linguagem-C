@@ -7,5 +7,5 @@ Uma coleção de programas e exercícios desenvolvidos em **Linguagem C**, focad
 
 - [X] **Estruturas condicionais** (if, switch)
 - [X] **Laços de repetição** (while, for)
-- [ ] **Funções e ponteiros**
+- [X] **Funções e ponteiros**
 - [ ] **Estruturas de dados** (Listas, Pilhas, Filas)
