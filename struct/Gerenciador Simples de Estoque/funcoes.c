@@ -36,7 +36,7 @@ void listar_produtos(void){
 }
 
 void buscar_produto(int codigo) {
-    printf("\n--> [Teste] Funcao de busca acionada para o codigo %d!\n", codigo);
+    
 }
 
 void atualizar_quantia(int codigo, int valor_mudanca) {
