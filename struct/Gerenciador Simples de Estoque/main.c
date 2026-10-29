@@ -21,7 +21,7 @@ int main(){
                 "[4]- Atualizar quantidade do estoque.\n"
                 "[5]- Sair.\n"
                 "---------------------------------------\n"
-                "Escolha -> "
+                "Sua Escolha -> "
             );
         scanf("%d", &escolha_usuario);
         getchar();
