@@ -3,7 +3,6 @@
 #include <string.h>
 #include "funcoes.h"
 
-//del /f programa.exe 2>nul & gcc *.c -o programa && .\programa
 //taskkill /F /IM programa.exe
 
 
@@ -62,15 +61,11 @@ int main(){
         }
         case 4:{
             int codigo;
-            int valor;
 
             printf("Digite o codigo para buscar: ");
             scanf("%d", &codigo);
             
-            printf("Digite um valor positivo para add ou um negativo para retirar: ");
-            scanf("%d", valor);
-            
-            atualizar_quantia(codigo, valor);
+            atualizar_quantia(codigo);
             break;
         }
         case 5:

@@ -13,6 +13,6 @@ typedef struct{
 void cadastrar_produto(char nome[50], int codigo, float valor, int quantidade);
 void listar_produtos(void);
 void buscar_produto(int codigo);
-void atualizar_quantia(int codigo, int valor);
+void atualizar_quantia(int codigo);
 
 #endif

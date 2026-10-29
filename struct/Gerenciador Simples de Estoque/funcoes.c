@@ -56,6 +56,37 @@ void buscar_produto(int codigo){
     }
 }
 
-void atualizar_quantia(int codigo, int valor_mudanca) {
-    printf("\n--> [Teste] Funcao de atualizar quantia acionada!\n");
+void atualizar_quantia(int codigo){
+    int valor;
+    int encontrado = 0;
+    for(int i = 0; i < total_produtos; i++){
+        if(produtos[i].codigo == codigo){
+            encontrado = 1;
+            while (1){
+                system("cls");
+                printf("-----------------------------------------\n");
+                printf("|        Nome do produto: %-13s |\n", produtos[i].nome);
+                printf("|------->    Estoque: %-7d   <-------|\n", produtos[i].quantidade);
+                printf("-----------------------------------------\n");
+
+
+                printf("Digite um valor positivo para add ou um negativo para retirar(0 para sair): ");
+                scanf("%d", &valor);
+
+                if(valor == 0){
+                    break;
+                }
+                else if (valor > 0){
+                    produtos[i].quantidade += valor;
+                }
+                else{
+                    produtos[i].quantidade -= (valor * -1);
+                }  
+            }
+            break;    
+        }
+    }  
+    if(encontrado == 0){
+        printf("Produto nao encontrado");
+    }
 }
