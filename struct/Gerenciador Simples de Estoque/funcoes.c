@@ -88,5 +88,6 @@ void atualizar_quantia(int codigo){
     }  
     if(encontrado == 0){
         printf("Produto nao encontrado");
+        Sleep(7000);
     }
 }
