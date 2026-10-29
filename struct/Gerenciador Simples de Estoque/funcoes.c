@@ -35,8 +35,25 @@ void listar_produtos(void){
     Sleep(7000);
 }
 
-void buscar_produto(int codigo) {
-    
+void buscar_produto(int codigo){
+    int encontrado = 0;
+    for(int i = 0; i < total_produtos; i++){
+        if(produtos[i].codigo == codigo){
+            printf("Produto %d: Nome -> %s | Valor -> %.2f | Quantidade -> %d\n", 
+                produtos[i].codigo,
+                produtos[i].nome,  
+                produtos[i].valor, 
+                produtos[i].quantidade);
+                Sleep(7000);
+            
+            encontrado = 1;
+            break;
+        } 
+    }
+    if(encontrado == 0){
+        printf("Produto não encontrado.");
+        Sleep(7000);
+    }
 }
 
 void atualizar_quantia(int codigo, int valor_mudanca) {
