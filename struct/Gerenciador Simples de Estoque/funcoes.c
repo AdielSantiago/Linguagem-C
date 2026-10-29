@@ -51,7 +51,7 @@ void buscar_produto(int codigo){
         } 
     }
     if(encontrado == 0){
-        printf("Produto não encontrado.");
+        printf("Produto nao encontrado.");
         Sleep(7000);
     }
 }

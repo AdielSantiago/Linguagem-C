@@ -4,6 +4,7 @@
 #include "funcoes.h"
 
 //taskkill /F /IM programa.exe
+//del /f programa.exe 2>nul & gcc main.c funcoes.c -o programa.exe && programa.exe
 
 
 int main(){
