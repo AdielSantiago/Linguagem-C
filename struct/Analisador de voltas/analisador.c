@@ -26,11 +26,8 @@ int main(){
             printf("Encerrando...");
             break;
         }
-        else{
-            tempo_total += tempo_digitado;
-        }
         
-    
+        tempo_total += tempo_digitado;
         voltas[i].tempo_volta = tempo_digitado;
         total_cadastradas += 1;
     }
